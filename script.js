@@ -16,3 +16,17 @@ function closeMenu() {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }
+
+state = 0;
+const button = document.getElementById("kuromi-button");
+button.addEventListener('click', function() { 
+    kuromi = document.getElementById("pic");
+    if (state == 0) {
+         kuromi.src = "img/source.gif";
+         state = 1;
+    } else {
+         kuromi.src = "img/image0.jpeg";
+         state = 0;
+    }
+});
+    
