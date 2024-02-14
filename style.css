@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: pink;
 }
  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
