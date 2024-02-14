@@ -4,6 +4,18 @@ html {
   background-color: pink;
 }
 
+body {
+  background-color: pink;
+}
+
+h1 {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 2px 2px 3px gray;
+  padding-top: 2%;
+  font-size: 27px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -60,6 +72,19 @@ a {
   color: #482ff7;
 }
 
+.home-pic {
+  margin-top: 2%;
+  display: block;
+  text-align: center;
+}
+.home-pic img {
+  border: whitesmoke;
+  border-style: inset;
+}
+
+.heart-button {
+  display: block;
+}
 @media only screen and (max-width: 768px) {
   .nav-menu {
       position: fixed;
