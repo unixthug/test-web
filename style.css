@@ -49,11 +49,13 @@ a {
   text-decoration: none;
 }
 
-.header{
-  border-bottom: 1px solid #E2E8F0;
+.stk {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: sticky;
+  top: 0;
+  background-color: hotpink;
+  border-bottom: 1px solid whitesmoke;
 }
-
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -120,58 +122,59 @@ hr {
   background-color: hotpink;
 }
 
-.top {
+#top {
+  z-index: 99;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
   background-color: hotpink;
   font-weight: bolder;
   color: whitesmoke;
   border: 2px whitesmoke inset;
   border-radius: 50%;
   padding: 15px;
-  position: absolute;
-  right: 5%;
 }
-.top button:active {
-  color: rgb(122, 35, 79);
-}
+
 
 @media only screen and (max-width: 768px) {
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 5rem;
-      flex-direction: column;
-      background-color: hotpink;
-      width: 100%;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow:
-          0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: hotpink;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+    0 10px 27px rgba(0, 0, 0, 0.05);
   }
-
+  
   .nav-menu.active {
-      left: 0;
+    left: 0;
   }
-
+  
   .nav-item {
-      margin: 2.5rem 0;
+    margin: 2.5rem 0;
   }
-
+  
   .hamburger {
-      display: block;
-      cursor: pointer;
+    display: block;
+    cursor: pointer;
   }
   
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
   }
-
+  
   .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
   }
-
+  
   .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
   }
 }
 
